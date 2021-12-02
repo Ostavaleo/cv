@@ -33,11 +33,14 @@
   border-radius: 360px; /* Радиус скругления */
   border: 3px solid white; /* Параметры рамки */
   box-shadow: 0 0 1px #666; /* Параметры тени *!*/
+  width:100%;
 }
 
+.space {
+  white-space: pre; /* Учитываются все пробелы и переносы */
+}
 
-
- .center_text {
+.center_text {
    text-align: center;
  }
 
@@ -45,10 +48,15 @@
   text-align: right;
 }
 
-.justify_text {
-  text-align: justify;
-}
+.underline {
+  text-decoration: underline;
+  color: darkred;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
 
+
+}
 
 .container {
   position: relative;
@@ -141,13 +149,14 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 75.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+
 
 
 /* Typography
@@ -325,7 +334,7 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 
 /* Code
