@@ -53,13 +53,16 @@
   color: darkred;
   font-size: 1.8rem;
   line-height: 1.5;
-  letter-spacing: -.05rem;
 }
 
 .left_column {
-  font-size: 1.8rem;
+  text-align: right;
+  font-weight: bold;
+  color: #3F4650;
+}
+
+.text_description {
   line-height: 1.5;
-  letter-spacing: -.05rem;
 }
 
 .ruby {
@@ -92,19 +95,23 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 0 10px;
+}
+
 .column,
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  flex-direction: column;
+  vertical-align: baseline;}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; }
+    padding: 0;
+}
 }
 
 /* For devices larger than 550px */
@@ -451,7 +458,8 @@ hr {
 .u-cf {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 
 /* Media Queries
